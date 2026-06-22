@@ -1,10 +1,30 @@
 # 🚀 InterviewIQ AI
 
-### AI-Powered Interview Preparation & Resume Intelligence Platform
+## AI-Powered Interview Preparation & Resume Intelligence Platform
 
-InterviewIQ AI is a full-stack AI application that helps candidates prepare for technical interviews through intelligent answer evaluation, adaptive questioning, resume-based interviews, personalized learning roadmaps, and performance analytics.
+InterviewIQ AI is a full-stack AI-powered platform designed to help students, job seekers, and professionals prepare for technical interviews through intelligent answer evaluation, adaptive questioning, resume-based interviews, performance analytics, and personalized learning roadmaps.
 
-Instead of simply asking questions, InterviewIQ AI acts like an AI interviewer that evaluates responses, identifies weak areas, tracks progress, and generates targeted improvement plans.
+Unlike traditional interview preparation platforms, InterviewIQ AI acts as an AI interviewer that evaluates responses, identifies weak areas, tracks progress, and generates targeted improvement plans.
+
+---
+
+## 🌐 Live Demo
+
+### Frontend Application
+
+https://ai-interview-bot-pied.vercel.app
+
+### Backend API
+
+https://ai-interview-bot-bbcn.onrender.com
+
+### API Documentation (Swagger)
+
+https://ai-interview-bot-bbcn.onrender.com/docs
+
+### GitHub Repository
+
+https://github.com/kumkum-thakur/AI-Interview-Bot-
 
 ---
 
@@ -12,60 +32,67 @@ Instead of simply asking questions, InterviewIQ AI acts like an AI interviewer t
 
 ### 🎯 AI Answer Evaluation
 
-* Evaluates interview answers using LLMs
+* Evaluates candidate answers using Large Language Models
 * Measures:
 
   * Technical Accuracy
+  * Communication Skills
   * Clarity
-  * Communication
   * Depth of Knowledge
-* Generates strengths, weaknesses, and improvement suggestions
-* Provides overall interview score and recommendation
+* Generates:
+
+  * Overall Score
+  * Strengths
+  * Weaknesses
+  * Improvement Suggestions
+  * Final Recommendation
 
 ---
 
-### 🧠 Adaptive Interview Engine
+### 🧠 AI Question Generation
 
-* Dynamically adjusts question difficulty
-* Easy → Medium → Hard progression
-* Personalized based on previous performance
+* Generates interview questions on demand
+* Supports multiple technical domains
+* Helps users practice topic-wise interviews
+* Produces realistic interview-style questions
 
 ---
 
 ### 📄 Resume Intelligence
 
-Upload a resume PDF and instantly get:
+Upload a resume and instantly receive:
 
-* Resume strength score
-* Candidate profile summary
-* Skills extraction
-* Project extraction
-* Resume-specific interview questions
+* Resume Summary
+* Skills Extraction
+* Project Analysis
+* Resume-Based Interview Questions
+* Candidate Strength Assessment
 
-This simulates the first stage of many real-world technical interviews where recruiters ask questions directly from a candidate's resume.
+This simulates the first stage of real-world technical interviews where recruiters ask questions directly from a candidate’s resume.
 
 ---
 
 ### 📊 Analytics Dashboard
 
-Track performance through:
+Track interview performance through:
 
-* Average score monitoring
-* Strongest skill identification
-* Weakest skill identification
-* Skill radar chart visualization
-* Interview history tracking
+* Average Score Monitoring
+* Performance Trends
+* Strongest Skill Identification
+* Weakest Skill Identification
+* Interview Progress Tracking
 
 ---
 
 ### 🎓 Personalized Learning Roadmaps
 
-After every evaluation the system:
+The system:
 
 * Detects knowledge gaps
-* Identifies focus areas
-* Generates a customized learning roadmap
-* Recommends next improvement steps
+* Identifies weak concepts
+* Suggests learning priorities
+* Generates customized improvement plans
+* Recommends next learning steps
 
 ---
 
@@ -73,10 +100,11 @@ After every evaluation the system:
 
 Candidates can:
 
-* Generate AI interview questions
-* Attempt interviews across topics
-* Receive instant feedback
-* Track long-term progress
+* Generate interview questions
+* Attempt technical interviews
+* Receive instant AI feedback
+* Practice repeatedly
+* Monitor long-term growth
 
 ---
 
@@ -103,6 +131,7 @@ SQLite Database
 
 * React.js
 * Vite
+* Axios
 * Recharts
 * CSS
 
@@ -112,7 +141,6 @@ SQLite Database
 * Python
 * SQLAlchemy
 * Pydantic
-* PyPDF
 
 ### AI Layer
 
@@ -123,6 +151,11 @@ SQLite Database
 
 * SQLite
 
+### Deployment
+
+* Vercel (Frontend)
+* Render (Backend)
+
 ---
 
 ## 📌 Core Modules
@@ -131,21 +164,25 @@ SQLite Database
 
 Analyzes candidate answers and generates structured feedback.
 
-### Adaptive Question Generator
+### Question Generation Engine
 
-Creates difficulty-adjusted interview questions.
+Creates interview questions for multiple technical domains.
 
 ### Resume Analyzer
 
-Extracts insights directly from uploaded resumes.
+Extracts skills, projects, and candidate insights from resumes.
 
 ### Analytics Engine
 
-Tracks performance and visualizes strengths and weaknesses.
+Tracks performance metrics and visualizes strengths and weaknesses.
 
 ### Learning Roadmap Generator
 
 Creates personalized improvement plans based on evaluation results.
+
+### History Management System
+
+Stores interview attempts and enables progress tracking.
 
 ---
 
@@ -163,11 +200,11 @@ resume_based.png
 
 Analytics.png
 
-### History
+### History Tracking
 
 history.png
 
-### Evaluation
+### Answer Evaluation
 
 Evaluation.png
 
@@ -177,26 +214,91 @@ Mock Interview.png
 
 ---
 
+## 🚀 Deployment
+
+### Frontend
+
+Hosted on Vercel
+
+https://ai-interview-bot-pied.vercel.app
+
+### Backend
+
+Hosted on Render
+
+https://ai-interview-bot-bbcn.onrender.com
+
+---
+
+## ⚙️ Local Development Setup
+
+### Clone Repository
+
+```bash
+git clone https://github.com/kumkum-thakur/AI-Interview-Bot-.git
+cd AI-Interview-Bot-
+```
+
+### Backend Setup
+
+```bash
+cd backend
+
+pip install -r requirements.txt
+
+uvicorn app.main:app --reload
+```
+
+### Frontend Setup
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+---
+
 ## 🎯 Future Improvements
 
-* Voice-based mock interviews
-* Company-specific interview modes (Google, Amazon, Microsoft)
+* Voice-Based Mock Interviews
+* Company-Specific Interview Modes
+
+  * Google
+  * Amazon
+  * Microsoft
+  * Adobe
 * JWT Authentication
-* Multi-user support
-* PostgreSQL migration
-* Cloud deployment
-* Exportable interview reports
+* Multi-User Support
+* PostgreSQL Migration
+* Exportable PDF Interview Reports
+* AI Career Guidance Assistant
+* Interview Performance Leaderboards
 
 ---
 
 ## 👨‍💻 Author
 
-**Kumkum**
+### Kumkum
 
 B.Tech Computer Science & Engineering (Data Science)
 
-Passionate about AI, Full Stack Development, and Building Intelligent Systems.
+Passionate about:
+
+* Artificial Intelligence
+* Full Stack Development
+* Machine Learning
+* Building Intelligent Systems
+
+GitHub:
+https://github.com/kumkum-thakur
 
 ---
 
-### ⭐ If you found this project interesting, consider giving it a star.
+## ⭐ Support
+
+If you found this project useful, consider giving it a star on GitHub.
+
+Contributions, feedback, and suggestions are always welcome.
