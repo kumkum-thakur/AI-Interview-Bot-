@@ -39,7 +39,7 @@ function App() {
 
   const fetchHistory = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/history");
+      const response = await fetch("https://ai-interview-bot-bbcn.onrender.com/history");
       const data = await response.json();
       setHistory(data.reverse().slice(0, 5));
     } catch (error) {
@@ -55,7 +55,7 @@ function App() {
     setQuestionLoading(true);
 
     const response = await fetch(
-      `http://127.0.0.1:8000/generate-question?topic=${topic}`
+      `https://ai-interview-bot-bbcn.onrender.com/generate-question?topic=${topic}`
     );
 
     const data = await response.json();
@@ -75,7 +75,7 @@ function App() {
     formData.append("file", resumeFile);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/analyze-resume", {
+      const response = await fetch("https://ai-interview-bot-bbcn.onrender.com/analyze-resume", {
         method: "POST",
         body: formData,
       });
@@ -104,7 +104,7 @@ function App() {
     }
 
     const response = await fetch(
-      `http://127.0.0.1:8000/adaptive-question?topic=${result.topic}&previous_score=${result.overall_score}`
+      `https://ai-interview-bot-bbcn.onrender.com/adaptive-question?topic=${result.topic}&previous_score=${result.overall_score}`
     );
 
     const data = await response.json();
@@ -127,7 +127,7 @@ function App() {
 
     setLoading(true);
 
-    const response = await fetch("http://127.0.0.1:8000/evaluate", {
+    const response = await fetch("https://ai-interview-bot-bbcn.onrender.com/evaluate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -177,7 +177,7 @@ function App() {
     if (!confirmDelete) return;
 
     try {
-      await fetch("http://127.0.0.1:8000/history", {
+      await fetch("https://ai-interview-bot-bbcn.onrender.com/history", {
         method: "DELETE",
       });
 
