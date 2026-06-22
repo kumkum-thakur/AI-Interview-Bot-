@@ -1,8 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes.interview import router
+from app.database.connection import engine
+from app.models.database_models import Base
 
 app = FastAPI(title="InterviewIQ AI")
+
+Base.metadata.create_all(bind=engine)
 
 origins = [
     "http://localhost:5173",
